@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link media="all" rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script type="text/javascript" src="../highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="../highcharts/accessibility.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/scenario.js"></script>
+  </head>
+  <body class="no-margin stats-body">
+    <div class="path"><div class='breadcrumbs'>
+      <a class="breadcrumb" id="a90f0fc4-127e-436d-bdb7-0a31590b83a4" href="javascript:void(0);" tabindex="0" onclick="treeNav(&#39;a90f0fc4-127e-436d-bdb7-0a31590b83a4&#39;, null)">Databases</a>
+      <a> &gt; </a>
+      <a class="breadcrumb" id="2731a967-7bc9-42b4-96af-cd834dd05127" href="javascript:void(0);" tabindex="0" onclick="treeNav(&#39;2731a967-7bc9-42b4-96af-cd834dd05127&#39;, null)">Monolithic_Northwind</a>
+      <a> &gt; </a>
+      <span style="font-weight: bold; color: blue" id="ba724e65-9f23-4ccc-babc-587dc62ddafa">Tables</span>
+      </div>
+      <a tabindex='0' href='javascript:void(0);' role='button' aria-label='Minimize/maximize statistics' class='maximize-button' onclick='toggleAll()'>&#9974;</a>
+      <div class="clearfix"></div>
+    </div>
+    
+<div class='tab-navigation' >
+    <a id='stat-buttons-tab-0' class='stat-buttons-tab tab-selected' href='javascript:void(0);' tabindex='0' aria-label='Overview' role='tab' index='0' onclick='tabClicked(this)'>
+    
+        <div style='position:relative;top:4px;font-family:Arial;font-size:9.75pt;color:black;'>
+    Overview
+    
+        </div>
+    </a>
+    
+    <a id='stat-buttons-tab-2' class='stat-buttons-tab' href='javascript:void(0);' tabindex='0' aria-label='Details' role='tab' index='2' onclick='tabClicked(this)'>
+        <div style='position:relative;top:4px;font-family:Arial;font-size:9.75pt;color:black;'>Details</div>
+    </a>
+</div>
+
+    <div id="content-stat-buttons-tab-0" class="content-tab full-width">
+      <div class="scrollable-tab">
+        <div class="chart">
+          <div id="pieContainer">
+            <div id="pieConversion" class="half-width"></div>
+            <div id="pieEffort" class="half-width"></div>
+            <script>
+initPieChart(
+    [
+        {name: 'Automatic', y: 33, color: 'forestgreen'},
+        {name: 'Warning', y: 93, color: 'gold'},
+        {name: 'Error', y: 5, color: 'crimson'},
+    ],
+    'Object',
+    'Object Conversion<br>131 Object(s)',
+    'Breakdown of objects categorized by severity of conversion issues',
+    'pieConversion');
+initPieChart(
+    [
+        {name: 'Warning', y: 3.5, color: 'steelblue'},
+        {name: 'Error', y: 3.0, color: 'navy'},
+    ],
+    'Hour',
+    'Manual Conversion Time<br>6.5 Hour(s)',
+    'Distribution of estimated manual effort in hours',
+    'pieEffort');</script>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="chart-title">Objects Breakdown</div>
+        <div class="chart-subtitle">Child objects with conversion issues</div>
+        <div class="chart-legend-container">
+          <div class="sample info"></div>
+          Automatic
+          <div class="sample warning"></div>
+          Warning
+          <div class="sample error"></div>
+          Error
+          <br/>
+          <div class="sample warning-hours"></div>
+          Warning hours
+          <div class="sample error-hours"></div>
+          Error hours</div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;24ac7418-115d-4f1b-90fa-69f81c34c800&#39;, null);">CUSTOMERS</div>
+          <div id="barChart0" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;38380723-36a6-4b06-925f-70375350dfb0&#39;, null);">EMPLOYEE PRIVILEGES</div>
+          <div id="barChart1" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;30f8e57b-f8c5-4e02-8fca-875d1206d7f4&#39;, null);">EMPLOYEES</div>
+          <div id="barChart2" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;a9689221-eb56-4ae4-b722-0174f73573bd&#39;, null);">INVENTORY TRANSACTION TYPES</div>
+          <div id="barChart3" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;0c6c6bdd-3b76-4377-80c2-8f9eb8abb97a&#39;, null);">INVENTORY TRANSACTIONS</div>
+          <div id="barChart4" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;1113d9d4-0969-43bd-b416-f76b1a6aca7c&#39;, null);">INVOICES</div>
+          <div id="barChart5" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;f8d561a4-4e04-47e2-8510-3e79b6f2f89c&#39;, null);">ORDER DETAILS</div>
+          <div id="barChart6" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;c465b36a-280c-4046-b544-5994d0665883&#39;, null);">ORDER DETAILS STATUS</div>
+          <div id="barChart7" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;f46ef664-cdb0-4898-8371-a85f27745137&#39;, null);">ORDERS</div>
+          <div id="barChart8" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;cc4cb10f-da5c-4318-9714-41ccfab0539e&#39;, null);">ORDERS STATUS</div>
+          <div id="barChart9" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;6732adad-d644-41ec-99d9-0388e41cc1bb&#39;, null);">ORDERS TAX STATUS</div>
+          <div id="barChart10" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;7a4c1262-5b81-49b4-b2a5-f6cb0940dc93&#39;, null);">PRIVILEGES</div>
+          <div id="barChart11" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;9422a86b-adcc-46bd-b061-0597b90a1eb9&#39;, null);">PRODUCTS</div>
+          <div id="barChart12" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;ad99ada0-48f6-46f2-8281-c4df5e6bfecc&#39;, null);">PURCHASE ORDER DETAILS</div>
+          <div id="barChart13" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;776bdb85-7395-41b1-a115-0d99e64f6522&#39;, null);">PURCHASE ORDER STATUS</div>
+          <div id="barChart14" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;10eef8a1-a529-4ba4-b485-0ac097dfa44a&#39;, null);">PURCHASE ORDERS</div>
+          <div id="barChart15" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;9ef54366-4e57-4e35-b41d-eccfa61596ce&#39;, null);">SALES REPORTS</div>
+          <div id="barChart16" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;4caf3d30-e0a6-492a-b434-61bad5b310bd&#39;, null);">SHIPPERS</div>
+          <div id="barChart17" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;0d3c8eda-b673-4299-a302-4bfd1b129ed3&#39;, null);">STRINGS</div>
+          <div id="barChart18" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bar-chart-container">
+          <div class="bar-chart-label clickable" onclick="treeNav(&#39;3822d52c-1c01-4433-a514-5dd37a8812cd&#39;, null);">SUPPLIERS</div>
+          <div id="barChart19" class="bar-chart"></div>
+          <div class="clearfix"></div>
+        </div>
+        <script>barCharts.push({'barChartName':barChart0,'totalElements':8,'automaticElements':3,'errorElements':1,'warningElements':4,'infoElements':0,'errorHours':0.5,'warningHours':0});barCharts.push({'barChartName':barChart1,'totalElements':7,'automaticElements':0,'errorElements':0,'warningElements':7,'infoElements':0,'errorHours':0,'warningHours':1.0});barCharts.push({'barChartName':barChart2,'totalElements':8,'automaticElements':3,'errorElements':1,'warningElements':4,'infoElements':0,'errorHours':0.5,'warningHours':0});barCharts.push({'barChartName':barChart3,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0.5});barCharts.push({'barChartName':barChart4,'totalElements':13,'automaticElements':0,'errorElements':0,'warningElements':13,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart5,'totalElements':5,'automaticElements':3,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart6,'totalElements':14,'automaticElements':0,'errorElements':0,'warningElements':14,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart7,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0.5});barCharts.push({'barChartName':barChart8,'totalElements':18,'automaticElements':15,'errorElements':0,'warningElements':3,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart9,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0.5});barCharts.push({'barChartName':barChart10,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0.5});barCharts.push({'barChartName':barChart11,'totalElements':2,'automaticElements':1,'errorElements':0,'warningElements':1,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart12,'totalElements':3,'automaticElements':1,'errorElements':1,'warningElements':1,'infoElements':0,'errorHours':1.0,'warningHours':0});barCharts.push({'barChartName':barChart13,'totalElements':12,'automaticElements':0,'errorElements':0,'warningElements':12,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart14,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0.5});barCharts.push({'barChartName':barChart15,'totalElements':11,'automaticElements':0,'errorElements':0,'warningElements':11,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart16,'totalElements':2,'automaticElements':0,'errorElements':0,'warningElements':2,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart17,'totalElements':8,'automaticElements':3,'errorElements':1,'warningElements':4,'infoElements':0,'errorHours':0.5,'warningHours':0});barCharts.push({'barChartName':barChart18,'totalElements':2,'automaticElements':1,'errorElements':0,'warningElements':1,'infoElements':0,'errorHours':0,'warningHours':0});barCharts.push({'barChartName':barChart19,'totalElements':8,'automaticElements':3,'errorElements':1,'warningElements':4,'infoElements':0,'errorHours':0.5,'warningHours':0});</script>
+      </div>
+    </div>
+    <div id="content-stat-buttons-tab-2" class="scrollable-tab content-tab full-width tab-content-hidden">
+      <div class="raw-data">
+        <table class="stats-table">
+          <caption>
+            <b>Objects Conversion</b>
+          </caption>
+          <colgroup>
+            <col style="width: 139px"></col>
+            <col style="width: 51px"></col>
+            <col style="width: 79px"></col>
+            <col style="width: 79px"></col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>Object type</th>
+              <th>Total</th>
+              <th>Converted</th>
+              <th>Objects with Issues</th>
+              <th>Error Objects</th>
+              <th>Warning Objects</th>
+              <th>Info Objects</th>
+              <th>Error Hours</th>
+              <th>Warning Hours</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr height="35">
+              <td class="align-left">
+                <span>table</span>
+              </td>
+              <td>
+                <span>20</span>
+              </td>
+              <td>
+                <span>0 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>20</span>
+              </td>
+              <td>
+                <span>5</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr height="35">
+              <td class="align-left">
+                <span>index</span>
+              </td>
+              <td>
+                <span>69</span>
+              </td>
+              <td>
+                <span>26.09 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>51</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>51</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr height="35">
+              <td class="align-left">
+                <span>primary-key</span>
+              </td>
+              <td>
+                <span>20</span>
+              </td>
+              <td>
+                <span>45 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>11</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>11</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.5</span>
+              </td>
+            </tr>
+            <tr height="35">
+              <td class="align-left">
+                <span>foreign-key</span>
+              </td>
+              <td>
+                <span>21</span>
+              </td>
+              <td>
+                <span>28.57 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr height="35">
+              <td class="align-left">
+                <span>unique-constraint</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="raw-data">
+        <table class="stats-table">
+          <caption>
+            <div>
+              <b>Syntax Conversion</b>
+            </div>
+          </caption>
+          <colgroup>
+            <col style="width: 139px"></col>
+            <col style="width: 51px"></col>
+            <col style="width: 79px"></col>
+            <col style="width: 79px"></col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>Syntax element</th>
+              <th>Total</th>
+              <th>Converted</th>
+              <th>Syntax elements with Issues</th>
+              <th>Error elements</th>
+              <th>Warning elements</th>
+              <th>Info elements</th>
+              <th>Error Hours</th>
+              <th>Warning Hours</th>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>&lt;ALL&gt;</span>
+              </td>
+              <td>
+                <span>309</span>
+              </td>
+              <td>
+                <span>23.62 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>236</span>
+              </td>
+              <td>
+                <span>6</span>
+              </td>
+              <td>
+                <span>230</span>
+              </td>
+              <td>
+                <span>212</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>3.5</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>column</span>
+              </td>
+              <td>
+                <span>177</span>
+              </td>
+              <td>
+                <span>20.9 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>140</span>
+              </td>
+              <td>
+                <span>6</span>
+              </td>
+              <td>
+                <span>134</span>
+              </td>
+              <td>
+                <span>91</span>
+              </td>
+              <td>
+                <span>3.0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>foreign-key</span>
+              </td>
+              <td>
+                <span>21</span>
+              </td>
+              <td>
+                <span>28.57 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>15</span>
+              </td>
+              <td>
+                <span>21</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>index</span>
+              </td>
+              <td>
+                <span>69</span>
+              </td>
+              <td>
+                <span>26.09 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>51</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>51</span>
+              </td>
+              <td>
+                <span>69</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>primary-key</span>
+              </td>
+              <td>
+                <span>20</span>
+              </td>
+              <td>
+                <span>10 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>18</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>18</span>
+              </td>
+              <td>
+                <span>20</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>3.5</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-left">
+                <span>unique-constraint</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0 %
+                  <img src="../img/error.gif"></img>
+                </span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+              <td>
+                <span>0</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
