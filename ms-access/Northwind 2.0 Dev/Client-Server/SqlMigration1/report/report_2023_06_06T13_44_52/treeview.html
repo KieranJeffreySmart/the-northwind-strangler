@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Objects tree section</title>
+    <link media="all" rel="stylesheet" type="text/css" href="css/treeview.css"/>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/treeview.js"></script>
+  </head>
+  <body id="tree-body" onresize="resetButtonStatus();">
+    <a id="expander-left" onclick="showTree(!isExpanded());return false;" class="expander-left" aria-label="Objects tree section expanded, press Enter to collapse" href="javascript:void(0);">
+      <span></span>
+    </a>
+    <div id="tree" class="tree">
+      <ul class="dNode collapsed">
+        <div class="holder">
+          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Databases, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+          <img src="img/folder_error.gif" alt="category"></img>
+          <a class="node" role="button" href="javascript:void(0);" name="Databases" id="02cdb246-adb6-40e1-b94a-a0c1059701ef" onclick="pathTo(this, &#39;02cdb246-adb6-40e1-b94a-a0c1059701ef&#39;, null);return false;" aria-label="Show details for category Databases, ">Databases</a>
+        </div>
+        <ul>
+          <li class="dNode collapsed">
+            <div class="holder">
+              <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Database1, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+              <img src="img/source_database_error.gif" alt="mdb-file"></img>
+              <a class="node" role="button" href="javascript:void(0);" name="Database1" id="db111f10-29df-4509-91db-dff11fa0502f" onclick="pathTo(this, &#39;db111f10-29df-4509-91db-dff11fa0502f&#39;, null);return false;" aria-label="Show details for mdb-file Database1, ">Database1</a>
+            </div>
+            <ul>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Tables, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                  <img src="img/folder_error.gif" alt="category"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="Tables" id="2633e2f0-5d03-4a4d-9c9e-784e5014f8ca" onclick="pathTo(this, &#39;2633e2f0-5d03-4a4d-9c9e-784e5014f8ca&#39;, null);return false;" aria-label="Show details for category Tables, ">Tables</a>
+                </div>
+                <ul>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Catalog_TableOfContents, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Catalog_TableOfContents" id="3eb8fd2e-11a2-4ef6-8ea8-3036e5e2a2e5" onclick="pathTo(this, &#39;3eb8fd2e-11a2-4ef6-8ea8-3036e5e2a2e5&#39;, null);return false;" aria-label="Show details for table Catalog_TableOfContents, ">Catalog_TableOfContents</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="4fbd57d8-61f6-4c62-8345-6213a7d2983a" onclick="pathTo(this, &#39;4fbd57d8-61f6-4c62-8345-6213a7d2983a&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="TocPage" id="f803ca9d-2113-4cec-ad0d-924821222e0b" onclick="pathTo(this, &#39;f803ca9d-2113-4cec-ad0d-924821222e0b&#39;, null);return false;" aria-label="Show details for index TocPage, ">TocPage</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="12174ada-b2bd-45e8-9a8b-8863cc9fd49c" onclick="pathTo(this, &#39;12174ada-b2bd-45e8-9a8b-8863cc9fd49c&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="e0b0f523-9ad0-4e01-9f16-482f2ce371dd" onclick="pathTo(this, &#39;e0b0f523-9ad0-4e01-9f16-482f2ce371dd&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Companies, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table_error.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Companies" id="8f46f56a-6129-4208-815a-dc64be1688fb" onclick="pathTo(this, &#39;8f46f56a-6129-4208-815a-dc64be1688fb&#39;, null);return false;" aria-label="Show details for table Companies, ">Companies</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="06d2b082-a8ac-49a3-97d0-75b6ee2a67f6" onclick="pathTo(this, &#39;06d2b082-a8ac-49a3-97d0-75b6ee2a67f6&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompanyTypesCompanies" id="0eaa6e40-daf0-42cf-bb4e-fda58976167c" onclick="pathTo(this, &#39;0eaa6e40-daf0-42cf-bb4e-fda58976167c&#39;, null);return false;" aria-label="Show details for index CompanyTypesCompanies, ">CompanyTypesCompanies</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CustomerName" id="b0b081ac-30bb-4906-a667-1eedb692a99a" onclick="pathTo(this, &#39;b0b081ac-30bb-4906-a667-1eedb692a99a&#39;, null);return false;" aria-label="Show details for unique-constraint CustomerName, ">CustomerName</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatesCompanies" id="cca1ccdc-14c2-4924-b734-12f3981b7e53" onclick="pathTo(this, &#39;cca1ccdc-14c2-4924-b734-12f3981b7e53&#39;, null);return false;" aria-label="Show details for index StatesCompanies, ">StatesCompanies</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="TaxStatusCompanies" id="630e3641-d571-4441-b921-1038eebb033b" onclick="pathTo(this, &#39;630e3641-d571-4441-b921-1038eebb033b&#39;, null);return false;" aria-label="Show details for index TaxStatusCompanies, ">TaxStatusCompanies</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="d9731fd6-943d-4564-8b95-bca6db05a9c0" onclick="pathTo(this, &#39;d9731fd6-943d-4564-8b95-bca6db05a9c0&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompanyTypesCompanies" id="fa77d506-02fd-4bc3-8a3c-eeb7e786ce01" onclick="pathTo(this, &#39;fa77d506-02fd-4bc3-8a3c-eeb7e786ce01&#39;, null);return false;" aria-label="Show details for foreign-key New_CompanyTypesCompanies, ">New_CompanyTypesCompanies</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_StatesCompanies" id="4d413e85-00ee-4c9b-8e9a-e87eccb21e03" onclick="pathTo(this, &#39;4d413e85-00ee-4c9b-8e9a-e87eccb21e03&#39;, null);return false;" aria-label="Show details for foreign-key New_StatesCompanies, ">New_StatesCompanies</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_TaxStatusCompanies" id="c56879d3-4858-46b9-9c44-381c663d7efb" onclick="pathTo(this, &#39;c56879d3-4858-46b9-9c44-381c663d7efb&#39;, null);return false;" aria-label="Show details for foreign-key New_TaxStatusCompanies, ">New_TaxStatusCompanies</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="47a4d72b-53e5-484a-b040-ac63c8c2632a" onclick="pathTo(this, &#39;47a4d72b-53e5-484a-b040-ac63c8c2632a&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="CompanyTypes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="CompanyTypes" id="2c7db591-a4e4-4475-9853-6e32a639d878" onclick="pathTo(this, &#39;2c7db591-a4e4-4475-9853-6e32a639d878&#39;, null);return false;" aria-label="Show details for table CompanyTypes, ">CompanyTypes</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="40501f5c-d116-403a-b2b9-be362367163c" onclick="pathTo(this, &#39;40501f5c-d116-403a-b2b9-be362367163c&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompanyType" id="ced771a7-dfaf-49fa-b441-72fdf44bb5eb" onclick="pathTo(this, &#39;ced771a7-dfaf-49fa-b441-72fdf44bb5eb&#39;, null);return false;" aria-label="Show details for unique-constraint CompanyType, ">CompanyType</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="48941998-8e40-4a31-9aee-1c220be61f09" onclick="pathTo(this, &#39;48941998-8e40-4a31-9aee-1c220be61f09&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="f0e3c50e-2e2b-4d79-87a2-86b87c8a0526" onclick="pathTo(this, &#39;f0e3c50e-2e2b-4d79-87a2-86b87c8a0526&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Contacts, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Contacts" id="c956577f-614d-42f8-b476-784dff3b9746" onclick="pathTo(this, &#39;c956577f-614d-42f8-b476-784dff3b9746&#39;, null);return false;" aria-label="Show details for table Contacts, ">Contacts</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="cc8f310c-c6f9-4b5a-9c2f-175b32d2e183" onclick="pathTo(this, &#39;cc8f310c-c6f9-4b5a-9c2f-175b32d2e183&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompaniesContacts" id="ec2c0ffe-e070-46d7-b3b4-26d6fb9ab0bb" onclick="pathTo(this, &#39;ec2c0ffe-e070-46d7-b3b4-26d6fb9ab0bb&#39;, null);return false;" aria-label="Show details for index CompaniesContacts, ">CompaniesContacts</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxCompanyFNLN" id="8f372174-c5dc-4c37-a4c5-5c1f8c8b30f8" onclick="pathTo(this, &#39;8f372174-c5dc-4c37-a4c5-5c1f8c8b30f8&#39;, null);return false;" aria-label="Show details for unique-constraint uidxCompanyFNLN, ">uidxCompanyFNLN</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxCompanyLNFN" id="049b6052-afb0-435e-9fb3-f9a17fce1172" onclick="pathTo(this, &#39;049b6052-afb0-435e-9fb3-f9a17fce1172&#39;, null);return false;" aria-label="Show details for unique-constraint uidxCompanyLNFN, ">uidxCompanyLNFN</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="2f6daa6b-050f-481e-b588-a7e499cea735" onclick="pathTo(this, &#39;2f6daa6b-050f-481e-b588-a7e499cea735&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompaniesContacts" id="78615419-6a18-46a8-99f4-a6dc7fb479ed" onclick="pathTo(this, &#39;78615419-6a18-46a8-99f4-a6dc7fb479ed&#39;, null);return false;" aria-label="Show details for foreign-key New_CompaniesContacts, ">New_CompaniesContacts</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="96d5c44a-6d37-4b40-ad6e-8c1641c20d97" onclick="pathTo(this, &#39;96d5c44a-6d37-4b40-ad6e-8c1641c20d97&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="EmployeePrivileges, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="EmployeePrivileges" id="ea496c10-2094-40c6-8c31-5f7a2b09439d" onclick="pathTo(this, &#39;ea496c10-2094-40c6-8c31-5f7a2b09439d&#39;, null);return false;" aria-label="Show details for table EmployeePrivileges, ">EmployeePrivileges</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="e6a5d332-1898-4a6a-8528-9ad252d227e4" onclick="pathTo(this, &#39;e6a5d332-1898-4a6a-8528-9ad252d227e4&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="EmployeesEmployeePrivileges" id="682f36f1-3f0c-4329-9af0-f524e8649e3d" onclick="pathTo(this, &#39;682f36f1-3f0c-4329-9af0-f524e8649e3d&#39;, null);return false;" aria-label="Show details for index EmployeesEmployeePrivileges, ">EmployeesEmployeePrivileges</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrivilegeID" id="299ffc5f-81d9-459b-83d5-e55083e0a9c1" onclick="pathTo(this, &#39;299ffc5f-81d9-459b-83d5-e55083e0a9c1&#39;, null);return false;" aria-label="Show details for index PrivilegeID, ">PrivilegeID</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrivilegesEmployeePrivileges" id="64769071-9401-4796-bd9d-7babf5d68b08" onclick="pathTo(this, &#39;64769071-9401-4796-bd9d-7babf5d68b08&#39;, null);return false;" aria-label="Show details for index PrivilegesEmployeePrivileges, ">PrivilegesEmployeePrivileges</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="UniqueIdx" id="6db24be0-0d92-43d0-b775-421bcf0823af" onclick="pathTo(this, &#39;6db24be0-0d92-43d0-b775-421bcf0823af&#39;, null);return false;" aria-label="Show details for unique-constraint UniqueIdx, ">UniqueIdx</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="a28e8792-fb45-409b-aed6-93636c1f8db1" onclick="pathTo(this, &#39;a28e8792-fb45-409b-aed6-93636c1f8db1&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_EmployeesEmployeePrivileges" id="8c2168ee-e905-4c83-831d-9e97f834a4c3" onclick="pathTo(this, &#39;8c2168ee-e905-4c83-831d-9e97f834a4c3&#39;, null);return false;" aria-label="Show details for foreign-key New_EmployeesEmployeePrivileges, ">New_EmployeesEmployeePrivileges</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_PrivilegesEmployeePrivileges" id="c9bf6afe-be45-41fb-ad5b-d99f3f149b68" onclick="pathTo(this, &#39;c9bf6afe-be45-41fb-ad5b-d99f3f149b68&#39;, null);return false;" aria-label="Show details for foreign-key New_PrivilegesEmployeePrivileges, ">New_PrivilegesEmployeePrivileges</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="d0847390-ec7b-455e-a44e-ccaefb010ab7" onclick="pathTo(this, &#39;d0847390-ec7b-455e-a44e-ccaefb010ab7&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Employees, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Employees" id="507c140b-dcd3-40ab-af68-8cf1b0c7c3ca" onclick="pathTo(this, &#39;507c140b-dcd3-40ab-af68-8cf1b0c7c3ca&#39;, null);return false;" aria-label="Show details for table Employees, ">Employees</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="db572c5c-64f7-472b-beff-178b5458f1de" onclick="pathTo(this, &#39;db572c5c-64f7-472b-beff-178b5458f1de&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="EmployeesEmployees" id="c21aee9b-584e-413d-a4db-b5a371e7cf4a" onclick="pathTo(this, &#39;c21aee9b-584e-413d-a4db-b5a371e7cf4a&#39;, null);return false;" aria-label="Show details for index EmployeesEmployees, ">EmployeesEmployees</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="SalutationsEmployees" id="9e47773e-e29a-4e90-8ae9-b5275b444782" onclick="pathTo(this, &#39;9e47773e-e29a-4e90-8ae9-b5275b444782&#39;, null);return false;" aria-label="Show details for index SalutationsEmployees, ">SalutationsEmployees</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxFNLN" id="347c620c-3753-4fc9-bf9f-9d59c86405e4" onclick="pathTo(this, &#39;347c620c-3753-4fc9-bf9f-9d59c86405e4&#39;, null);return false;" aria-label="Show details for unique-constraint uidxFNLN, ">uidxFNLN</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxLNFN" id="c0d4d93a-dd1a-4ab6-a195-c17737f981ad" onclick="pathTo(this, &#39;c0d4d93a-dd1a-4ab6-a195-c17737f981ad&#39;, null);return false;" aria-label="Show details for unique-constraint uidxLNFN, ">uidxLNFN</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="e33b2f07-8d72-43bf-95c9-f576599eb128" onclick="pathTo(this, &#39;e33b2f07-8d72-43bf-95c9-f576599eb128&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_EmployeesEmployees" id="3c268b6c-ce32-42cb-b0db-76c3c9337a86" onclick="pathTo(this, &#39;3c268b6c-ce32-42cb-b0db-76c3c9337a86&#39;, null);return false;" aria-label="Show details for foreign-key New_EmployeesEmployees, ">New_EmployeesEmployees</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_SalutationsEmployees" id="e9e37c8d-bf4e-4260-bae8-7e156040ba87" onclick="pathTo(this, &#39;e9e37c8d-bf4e-4260-bae8-7e156040ba87&#39;, null);return false;" aria-label="Show details for foreign-key New_SalutationsEmployees, ">New_SalutationsEmployees</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="788163e7-fa3b-44ac-9c6d-8b164100ad4e" onclick="pathTo(this, &#39;788163e7-fa3b-44ac-9c6d-8b164100ad4e&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="OrderDetails, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="OrderDetails" id="d06dc9ed-074a-4ea9-bb4f-517564380fa5" onclick="pathTo(this, &#39;d06dc9ed-074a-4ea9-bb4f-517564380fa5&#39;, null);return false;" aria-label="Show details for table OrderDetails, ">OrderDetails</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="917cbf76-c8b6-476c-ad8e-e4e3579b30d2" onclick="pathTo(this, &#39;917cbf76-c8b6-476c-ad8e-e4e3579b30d2&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="OrderDetailsStatusOrderDetails" id="9cc64fd4-dba8-425d-b790-d0aa8507af13" onclick="pathTo(this, &#39;9cc64fd4-dba8-425d-b790-d0aa8507af13&#39;, null);return false;" aria-label="Show details for index OrderDetailsStatusOrderDetails, ">OrderDetailsStatusOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="OrdersOrderDetails" id="387344d8-6a72-4fa3-9a36-2f021c2fd7b5" onclick="pathTo(this, &#39;387344d8-6a72-4fa3-9a36-2f021c2fd7b5&#39;, null);return false;" aria-label="Show details for index OrdersOrderDetails, ">OrdersOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductID" id="b36a5c69-5a93-4e63-8da8-1d38a1c1099a" onclick="pathTo(this, &#39;b36a5c69-5a93-4e63-8da8-1d38a1c1099a&#39;, null);return false;" aria-label="Show details for index ProductID, ">ProductID</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductsOrderDetails" id="6e4383f7-5fc9-42c0-a893-96e1ff3668d8" onclick="pathTo(this, &#39;6e4383f7-5fc9-42c0-a893-96e1ff3668d8&#39;, null);return false;" aria-label="Show details for index ProductsOrderDetails, ">ProductsOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusID" id="84c9c312-bae9-4f17-adca-337dba11aaef" onclick="pathTo(this, &#39;84c9c312-bae9-4f17-adca-337dba11aaef&#39;, null);return false;" aria-label="Show details for index StatusID, ">StatusID</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxOrderID_ProductID" id="19c7e26f-e2fc-4539-a08b-c275c181dce0" onclick="pathTo(this, &#39;19c7e26f-e2fc-4539-a08b-c275c181dce0&#39;, null);return false;" aria-label="Show details for unique-constraint uidxOrderID_ProductID, ">uidxOrderID_ProductID</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="5f36d94d-78ad-4317-bc5a-6d0daf4b1084" onclick="pathTo(this, &#39;5f36d94d-78ad-4317-bc5a-6d0daf4b1084&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_OrderDetailsStatusOrderDetails" id="e5447fe4-bd26-4825-811f-2793c42aee94" onclick="pathTo(this, &#39;e5447fe4-bd26-4825-811f-2793c42aee94&#39;, null);return false;" aria-label="Show details for foreign-key New_OrderDetailsStatusOrderDetails, ">New_OrderDetailsStatusOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_OrdersOrderDetails" id="7cb8a98b-967e-4268-9717-af6b7546086a" onclick="pathTo(this, &#39;7cb8a98b-967e-4268-9717-af6b7546086a&#39;, null);return false;" aria-label="Show details for foreign-key New_OrdersOrderDetails, ">New_OrdersOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_ProductsOrderDetails" id="bb6ac0b0-b16f-4f07-bcd9-0e691b909f50" onclick="pathTo(this, &#39;bb6ac0b0-b16f-4f07-bcd9-0e691b909f50&#39;, null);return false;" aria-label="Show details for foreign-key New_ProductsOrderDetails, ">New_ProductsOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="85f7c89b-47f7-4211-b985-8facd323c2c1" onclick="pathTo(this, &#39;85f7c89b-47f7-4211-b985-8facd323c2c1&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="OrderDetailStatus, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="OrderDetailStatus" id="7839c938-703b-4ddc-a0ec-c61dd119cf5b" onclick="pathTo(this, &#39;7839c938-703b-4ddc-a0ec-c61dd119cf5b&#39;, null);return false;" aria-label="Show details for table OrderDetailStatus, ">OrderDetailStatus</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="81670be7-7f8c-463a-929e-7f3aaef5c45d" onclick="pathTo(this, &#39;81670be7-7f8c-463a-929e-7f3aaef5c45d&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="SortOrder" id="058684ed-99a4-476c-af2e-26d02717bc98" onclick="pathTo(this, &#39;058684ed-99a4-476c-af2e-26d02717bc98&#39;, null);return false;" aria-label="Show details for unique-constraint SortOrder, ">SortOrder</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusName" id="75d5aaa4-1ad8-4c54-8fed-c7c74ffbf636" onclick="pathTo(this, &#39;75d5aaa4-1ad8-4c54-8fed-c7c74ffbf636&#39;, null);return false;" aria-label="Show details for unique-constraint StatusName, ">StatusName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="95911b08-1f67-4563-86b9-a786a91dbf97" onclick="pathTo(this, &#39;95911b08-1f67-4563-86b9-a786a91dbf97&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="d0b2e422-8653-4fde-aa66-cbcdb63f1455" onclick="pathTo(this, &#39;d0b2e422-8653-4fde-aa66-cbcdb63f1455&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Orders, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Orders" id="fbb7920e-15e2-46e3-9dee-e6343642346c" onclick="pathTo(this, &#39;fbb7920e-15e2-46e3-9dee-e6343642346c&#39;, null);return false;" aria-label="Show details for table Orders, ">Orders</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="71de4563-2a93-45e9-b42a-9cc033506b51" onclick="pathTo(this, &#39;71de4563-2a93-45e9-b42a-9cc033506b51&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompaniesOrders" id="3508330c-7823-4ed4-a9fc-c354d058c4b2" onclick="pathTo(this, &#39;3508330c-7823-4ed4-a9fc-c354d058c4b2&#39;, null);return false;" aria-label="Show details for index CompaniesOrders, ">CompaniesOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompaniesOrders1" id="2edb7eae-9d68-422d-9c14-e0158b169082" onclick="pathTo(this, &#39;2edb7eae-9d68-422d-9c14-e0158b169082&#39;, null);return false;" aria-label="Show details for index CompaniesOrders1, ">CompaniesOrders1</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="EmployeesOrders" id="73e6d9f9-a625-4457-a2f3-029174939747" onclick="pathTo(this, &#39;73e6d9f9-a625-4457-a2f3-029174939747&#39;, null);return false;" aria-label="Show details for index EmployeesOrders, ">EmployeesOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="OrderDate" id="4b8f8deb-9fac-4d8c-9240-1b4ccf07d1f9" onclick="pathTo(this, &#39;4b8f8deb-9fac-4d8c-9240-1b4ccf07d1f9&#39;, null);return false;" aria-label="Show details for index OrderDate, ">OrderDate</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="OrdersStatusOrders" id="ddc6ed95-f374-4052-b694-f9bda82f4504" onclick="pathTo(this, &#39;ddc6ed95-f374-4052-b694-f9bda82f4504&#39;, null);return false;" aria-label="Show details for index OrdersStatusOrders, ">OrdersStatusOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="TaxStatusOrders" id="fe0a83d9-dd7d-4e2e-bf1a-1d51adbce529" onclick="pathTo(this, &#39;fe0a83d9-dd7d-4e2e-bf1a-1d51adbce529&#39;, null);return false;" aria-label="Show details for index TaxStatusOrders, ">TaxStatusOrders</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="4c6736b9-a542-47dd-af01-cf4b2d871f9a" onclick="pathTo(this, &#39;4c6736b9-a542-47dd-af01-cf4b2d871f9a&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompaniesOrders" id="e7ccc771-00df-4808-afa4-3457559f72b5" onclick="pathTo(this, &#39;e7ccc771-00df-4808-afa4-3457559f72b5&#39;, null);return false;" aria-label="Show details for foreign-key New_CompaniesOrders, ">New_CompaniesOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompaniesOrders1" id="d52feed1-9b26-4aca-8510-3ae5b027c705" onclick="pathTo(this, &#39;d52feed1-9b26-4aca-8510-3ae5b027c705&#39;, null);return false;" aria-label="Show details for foreign-key New_CompaniesOrders1, ">New_CompaniesOrders1</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_EmployeesOrders" id="078fe1fe-ebfc-439c-874e-86726f4525e7" onclick="pathTo(this, &#39;078fe1fe-ebfc-439c-874e-86726f4525e7&#39;, null);return false;" aria-label="Show details for foreign-key New_EmployeesOrders, ">New_EmployeesOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_OrdersStatusOrders" id="39ad741d-306a-4e04-8ba7-21d218a73ccf" onclick="pathTo(this, &#39;39ad741d-306a-4e04-8ba7-21d218a73ccf&#39;, null);return false;" aria-label="Show details for foreign-key New_OrdersStatusOrders, ">New_OrdersStatusOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_TaxStatusOrders" id="3f3f81a5-b682-46bd-bf56-1463172390a8" onclick="pathTo(this, &#39;3f3f81a5-b682-46bd-bf56-1463172390a8&#39;, null);return false;" aria-label="Show details for foreign-key New_TaxStatusOrders, ">New_TaxStatusOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="3ce05786-d1ea-4e99-8e26-14860d7d1f98" onclick="pathTo(this, &#39;3ce05786-d1ea-4e99-8e26-14860d7d1f98&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="OrderStatus, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="OrderStatus" id="d8fbdefa-c2b0-4af3-8c51-354c796431c8" onclick="pathTo(this, &#39;d8fbdefa-c2b0-4af3-8c51-354c796431c8&#39;, null);return false;" aria-label="Show details for table OrderStatus, ">OrderStatus</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="de078c6b-cb31-4be4-a8a9-459a9dae0931" onclick="pathTo(this, &#39;de078c6b-cb31-4be4-a8a9-459a9dae0931&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="SortOrder" id="c8c0143a-6ccb-40f0-81a2-8978444618ff" onclick="pathTo(this, &#39;c8c0143a-6ccb-40f0-81a2-8978444618ff&#39;, null);return false;" aria-label="Show details for unique-constraint SortOrder, ">SortOrder</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusCode" id="d07b6047-4691-4ad7-a0d8-ce139f17ea22" onclick="pathTo(this, &#39;d07b6047-4691-4ad7-a0d8-ce139f17ea22&#39;, null);return false;" aria-label="Show details for unique-constraint StatusCode, ">StatusCode</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusName" id="fd76cd44-4093-4e3c-acb0-40f750aec7c3" onclick="pathTo(this, &#39;fd76cd44-4093-4e3c-acb0-40f750aec7c3&#39;, null);return false;" aria-label="Show details for unique-constraint StatusName, ">StatusName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="19f6a2bc-f1a9-4474-bb72-3fe9ad0afbf4" onclick="pathTo(this, &#39;19f6a2bc-f1a9-4474-bb72-3fe9ad0afbf4&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="1564b234-c7a3-4e49-8ab9-d0c071eefc95" onclick="pathTo(this, &#39;1564b234-c7a3-4e49-8ab9-d0c071eefc95&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Privileges, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Privileges" id="62a5ea4e-5af2-4864-89ea-d287707a7d98" onclick="pathTo(this, &#39;62a5ea4e-5af2-4864-89ea-d287707a7d98&#39;, null);return false;" aria-label="Show details for table Privileges, ">Privileges</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="4e8e09ff-2856-4640-b77d-f6e248321454" onclick="pathTo(this, &#39;4e8e09ff-2856-4640-b77d-f6e248321454&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrivilegeName" id="bde27bd6-1c4a-4226-bc43-f4cea9e58a5b" onclick="pathTo(this, &#39;bde27bd6-1c4a-4226-bc43-f4cea9e58a5b&#39;, null);return false;" aria-label="Show details for unique-constraint PrivilegeName, ">PrivilegeName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="0647424f-c6aa-4faa-892b-13bf6ddaa3cb" onclick="pathTo(this, &#39;0647424f-c6aa-4faa-892b-13bf6ddaa3cb&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="bc5097ad-0649-4f48-b22f-e3323c967797" onclick="pathTo(this, &#39;bc5097ad-0649-4f48-b22f-e3323c967797&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="ProductCategories, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="ProductCategories" id="9d4b02f3-c1f8-4768-939a-4ee26870ecf6" onclick="pathTo(this, &#39;9d4b02f3-c1f8-4768-939a-4ee26870ecf6&#39;, null);return false;" aria-label="Show details for table ProductCategories, ">ProductCategories</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="973bd9ca-d6a2-4608-97db-3b76892c526f" onclick="pathTo(this, &#39;973bd9ca-d6a2-4608-97db-3b76892c526f&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductCategory" id="b31aa2c9-7038-4b05-8728-ce93a36c8c9c" onclick="pathTo(this, &#39;b31aa2c9-7038-4b05-8728-ce93a36c8c9c&#39;, null);return false;" aria-label="Show details for unique-constraint ProductCategory, ">ProductCategory</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductCategoryCode" id="82526c6f-c2e1-40fe-ac15-9db2250af1c9" onclick="pathTo(this, &#39;82526c6f-c2e1-40fe-ac15-9db2250af1c9&#39;, null);return false;" aria-label="Show details for unique-constraint ProductCategoryCode, ">ProductCategoryCode</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="26e70e74-1e5f-4c6f-9a9a-9ab907324564" onclick="pathTo(this, &#39;26e70e74-1e5f-4c6f-9a9a-9ab907324564&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="2be782f5-73d7-4dc9-84da-9baa94d5c56d" onclick="pathTo(this, &#39;2be782f5-73d7-4dc9-84da-9baa94d5c56d&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Products, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Products" id="9e38ac87-957c-4cce-99d8-e201509dc0ff" onclick="pathTo(this, &#39;9e38ac87-957c-4cce-99d8-e201509dc0ff&#39;, null);return false;" aria-label="Show details for table Products, ">Products</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="005ab6b0-0ec1-4272-b8aa-932708583639" onclick="pathTo(this, &#39;005ab6b0-0ec1-4272-b8aa-932708583639&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductCategories_NEWProducts" id="ba969447-c384-49d7-a5f3-043f4b869fbe" onclick="pathTo(this, &#39;ba969447-c384-49d7-a5f3-043f4b869fbe&#39;, null);return false;" aria-label="Show details for index ProductCategories_NEWProducts, ">ProductCategories_NEWProducts</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductCode" id="7260a391-f984-4d14-af68-f8061a140f1c" onclick="pathTo(this, &#39;7260a391-f984-4d14-af68-f8061a140f1c&#39;, null);return false;" aria-label="Show details for unique-constraint ProductCode, ">ProductCode</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductName" id="8d3349f2-5e6a-4de4-bedc-eac32c5ae309" onclick="pathTo(this, &#39;8d3349f2-5e6a-4de4-bedc-eac32c5ae309&#39;, null);return false;" aria-label="Show details for unique-constraint ProductName, ">ProductName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="47e87ec0-c670-4f35-b779-721eb9736591" onclick="pathTo(this, &#39;47e87ec0-c670-4f35-b779-721eb9736591&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_ProductCategories_NEWProducts" id="f46a84e5-52b8-4d11-afe4-6c30da27eb79" onclick="pathTo(this, &#39;f46a84e5-52b8-4d11-afe4-6c30da27eb79&#39;, null);return false;" aria-label="Show details for foreign-key New_ProductCategories_NEWProducts, ">New_ProductCategories_NEWProducts</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="f2f58d33-ca3e-45c1-85bf-0ad85771e55f" onclick="pathTo(this, &#39;f2f58d33-ca3e-45c1-85bf-0ad85771e55f&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="ProductVendors, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="ProductVendors" id="fa56fca0-6f5a-4e61-911b-bd49a9148994" onclick="pathTo(this, &#39;fa56fca0-6f5a-4e61-911b-bd49a9148994&#39;, null);return false;" aria-label="Show details for table ProductVendors, ">ProductVendors</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="8c0ec0da-0aff-454a-8980-56887dbf0767" onclick="pathTo(this, &#39;8c0ec0da-0aff-454a-8980-56887dbf0767&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompaniesProductVendors" id="03e5d9d5-d5a0-4aec-af24-1c588eefedf8" onclick="pathTo(this, &#39;03e5d9d5-d5a0-4aec-af24-1c588eefedf8&#39;, null);return false;" aria-label="Show details for index CompaniesProductVendors, ">CompaniesProductVendors</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductsProductVendors" id="30242951-3750-4a1f-b397-5f1ee34383f7" onclick="pathTo(this, &#39;30242951-3750-4a1f-b397-5f1ee34383f7&#39;, null);return false;" aria-label="Show details for index ProductsProductVendors, ">ProductsProductVendors</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="UniqueIdx" id="c1f28ad6-35bf-4d69-844e-576250c9b44d" onclick="pathTo(this, &#39;c1f28ad6-35bf-4d69-844e-576250c9b44d&#39;, null);return false;" aria-label="Show details for unique-constraint UniqueIdx, ">UniqueIdx</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="VendorID" id="2ead56d1-04cc-4121-95cb-283dcc998532" onclick="pathTo(this, &#39;2ead56d1-04cc-4121-95cb-283dcc998532&#39;, null);return false;" aria-label="Show details for index VendorID, ">VendorID</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="760eb0d0-e763-498f-9cba-36acb4487c05" onclick="pathTo(this, &#39;760eb0d0-e763-498f-9cba-36acb4487c05&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompaniesProductVendors" id="a85db4de-16b0-4367-b3d8-0c192bb0fdfc" onclick="pathTo(this, &#39;a85db4de-16b0-4367-b3d8-0c192bb0fdfc&#39;, null);return false;" aria-label="Show details for foreign-key New_CompaniesProductVendors, ">New_CompaniesProductVendors</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_ProductsProductVendors" id="7f9a5e76-2637-4a05-a2be-1a70f89fa439" onclick="pathTo(this, &#39;7f9a5e76-2637-4a05-a2be-1a70f89fa439&#39;, null);return false;" aria-label="Show details for foreign-key New_ProductsProductVendors, ">New_ProductsProductVendors</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="fa417d92-749a-4f39-9fc6-bc8549cc505d" onclick="pathTo(this, &#39;fa417d92-749a-4f39-9fc6-bc8549cc505d&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="PurchaseOrderDetails, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="PurchaseOrderDetails" id="b229ba47-3b0d-4060-bc3c-b8483a8f1087" onclick="pathTo(this, &#39;b229ba47-3b0d-4060-bc3c-b8483a8f1087&#39;, null);return false;" aria-label="Show details for table PurchaseOrderDetails, ">PurchaseOrderDetails</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="74a1e0a0-39a4-4344-b215-f0b340f9371c" onclick="pathTo(this, &#39;74a1e0a0-39a4-4344-b215-f0b340f9371c&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductsPurchaseOrderDetails" id="a17c3c1f-f900-41b6-b075-9350eb5fc075" onclick="pathTo(this, &#39;a17c3c1f-f900-41b6-b075-9350eb5fc075&#39;, null);return false;" aria-label="Show details for index ProductsPurchaseOrderDetails, ">ProductsPurchaseOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PurchaseOrdersPurchaseOrderDetails" id="39e76c36-b4e7-4c1c-88c4-dd40b686d521" onclick="pathTo(this, &#39;39e76c36-b4e7-4c1c-88c4-dd40b686d521&#39;, null);return false;" aria-label="Show details for index PurchaseOrdersPurchaseOrderDetails, ">PurchaseOrdersPurchaseOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="uidxPurchaseOrderID_ProductID" id="1a631751-15b5-461f-89e2-b9144c81d336" onclick="pathTo(this, &#39;1a631751-15b5-461f-89e2-b9144c81d336&#39;, null);return false;" aria-label="Show details for unique-constraint uidxPurchaseOrderID_ProductID, ">uidxPurchaseOrderID_ProductID</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="1379244e-8cb3-4759-ae5f-d0dc0933b404" onclick="pathTo(this, &#39;1379244e-8cb3-4759-ae5f-d0dc0933b404&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_ProductsPurchaseOrderDetails" id="d9178e60-66b1-4b1a-9b95-c7183c9e241a" onclick="pathTo(this, &#39;d9178e60-66b1-4b1a-9b95-c7183c9e241a&#39;, null);return false;" aria-label="Show details for foreign-key New_ProductsPurchaseOrderDetails, ">New_ProductsPurchaseOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_PurchaseOrdersPurchaseOrderDetails" id="3014b313-5f11-4d05-8ab9-b38c8db85416" onclick="pathTo(this, &#39;3014b313-5f11-4d05-8ab9-b38c8db85416&#39;, null);return false;" aria-label="Show details for foreign-key New_PurchaseOrdersPurchaseOrderDetails, ">New_PurchaseOrdersPurchaseOrderDetails</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="05644ae3-8bb1-4e43-9d4b-4616c9e87962" onclick="pathTo(this, &#39;05644ae3-8bb1-4e43-9d4b-4616c9e87962&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="PurchaseOrders, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="PurchaseOrders" id="a7bf4fe2-c424-4871-9905-32ecb4c66691" onclick="pathTo(this, &#39;a7bf4fe2-c424-4871-9905-32ecb4c66691&#39;, null);return false;" aria-label="Show details for table PurchaseOrders, ">PurchaseOrders</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="c427f372-85d5-411f-9ba5-a8a5e5d8b13e" onclick="pathTo(this, &#39;c427f372-85d5-411f-9ba5-a8a5e5d8b13e&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="CompaniesPurchaseOrders" id="e3e0fa2f-e1c7-4fe8-b6b5-ed8642b5ac19" onclick="pathTo(this, &#39;e3e0fa2f-e1c7-4fe8-b6b5-ed8642b5ac19&#39;, null);return false;" aria-label="Show details for index CompaniesPurchaseOrders, ">CompaniesPurchaseOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="EmployeesPurchaseOrders1" id="92e31d8b-ed39-455e-9e1d-0403f835d666" onclick="pathTo(this, &#39;92e31d8b-ed39-455e-9e1d-0403f835d666&#39;, null);return false;" aria-label="Show details for index EmployeesPurchaseOrders1, ">EmployeesPurchaseOrders1</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="EmployeesPurchaseOrders2" id="7af0c28b-1cdf-451d-881d-3ce30ee65b8a" onclick="pathTo(this, &#39;7af0c28b-1cdf-451d-881d-3ce30ee65b8a&#39;, null);return false;" aria-label="Show details for index EmployeesPurchaseOrders2, ">EmployeesPurchaseOrders2</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PurchaseOrdersStatusPurchaseOrders" id="a1d244e7-08b7-4c61-9442-b37d5df5e7e7" onclick="pathTo(this, &#39;a1d244e7-08b7-4c61-9442-b37d5df5e7e7&#39;, null);return false;" aria-label="Show details for index PurchaseOrdersStatusPurchaseOrders, ">PurchaseOrdersStatusPurchaseOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusCode" id="16312e2f-89ab-4b05-95b5-17581c2935d0" onclick="pathTo(this, &#39;16312e2f-89ab-4b05-95b5-17581c2935d0&#39;, null);return false;" aria-label="Show details for index StatusCode, ">StatusCode</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="SubmittedDate" id="64c1cb3e-8f08-444b-a4a9-f21cfdef4391" onclick="pathTo(this, &#39;64c1cb3e-8f08-444b-a4a9-f21cfdef4391&#39;, null);return false;" aria-label="Show details for index SubmittedDate, ">SubmittedDate</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="2a578bd3-57ea-4a64-867b-12c5e79e267c" onclick="pathTo(this, &#39;2a578bd3-57ea-4a64-867b-12c5e79e267c&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_CompaniesPurchaseOrders" id="e02034b0-b51d-4122-8076-e3b37c48bd6d" onclick="pathTo(this, &#39;e02034b0-b51d-4122-8076-e3b37c48bd6d&#39;, null);return false;" aria-label="Show details for foreign-key New_CompaniesPurchaseOrders, ">New_CompaniesPurchaseOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_EmployeesPurchaseOrders1" id="bb9dd88c-2b02-4770-911f-0e0780a4931f" onclick="pathTo(this, &#39;bb9dd88c-2b02-4770-911f-0e0780a4931f&#39;, null);return false;" aria-label="Show details for foreign-key New_EmployeesPurchaseOrders1, ">New_EmployeesPurchaseOrders1</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_EmployeesPurchaseOrders2" id="2dcff4f3-2826-4fa0-9361-875d88a20815" onclick="pathTo(this, &#39;2dcff4f3-2826-4fa0-9361-875d88a20815&#39;, null);return false;" aria-label="Show details for foreign-key New_EmployeesPurchaseOrders2, ">New_EmployeesPurchaseOrders2</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_PurchaseOrdersStatusPurchaseOrders" id="30b53746-7836-4cf0-9eb0-4f6787b5f626" onclick="pathTo(this, &#39;30b53746-7836-4cf0-9eb0-4f6787b5f626&#39;, null);return false;" aria-label="Show details for foreign-key New_PurchaseOrdersStatusPurchaseOrders, ">New_PurchaseOrdersStatusPurchaseOrders</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="bc9b8c04-efa0-4d13-bae2-87f388622304" onclick="pathTo(this, &#39;bc9b8c04-efa0-4d13-bae2-87f388622304&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="PurchaseOrderStatus, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="PurchaseOrderStatus" id="0b04bc5b-e8c8-462b-9406-3a33cb8fe572" onclick="pathTo(this, &#39;0b04bc5b-e8c8-462b-9406-3a33cb8fe572&#39;, null);return false;" aria-label="Show details for table PurchaseOrderStatus, ">PurchaseOrderStatus</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="5937bba0-1683-499e-9aa8-e727c002c3c6" onclick="pathTo(this, &#39;5937bba0-1683-499e-9aa8-e727c002c3c6&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="SortOrder" id="bb59c584-47a5-41c9-a2e5-1da141807086" onclick="pathTo(this, &#39;bb59c584-47a5-41c9-a2e5-1da141807086&#39;, null);return false;" aria-label="Show details for unique-constraint SortOrder, ">SortOrder</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StatusName" id="d0e5463a-5b83-4dad-8ae5-0f500f5e8ebf" onclick="pathTo(this, &#39;d0e5463a-5b83-4dad-8ae5-0f500f5e8ebf&#39;, null);return false;" aria-label="Show details for unique-constraint StatusName, ">StatusName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="90d20a10-787c-4cec-b71b-f3176eedf35e" onclick="pathTo(this, &#39;90d20a10-787c-4cec-b71b-f3176eedf35e&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="447e84ef-b803-438b-bbbc-22cde6e2d12f" onclick="pathTo(this, &#39;447e84ef-b803-438b-bbbc-22cde6e2d12f&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="States, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="States" id="7ce76e2d-794d-4474-a79e-88953d3c4a80" onclick="pathTo(this, &#39;7ce76e2d-794d-4474-a79e-88953d3c4a80&#39;, null);return false;" aria-label="Show details for table States, ">States</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="175a8a64-ec4d-4dca-99b3-95c4e2b3bb72" onclick="pathTo(this, &#39;175a8a64-ec4d-4dca-99b3-95c4e2b3bb72&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="StateName" id="e2972260-fa10-4c5a-9cd1-bf98e88ae9fa" onclick="pathTo(this, &#39;e2972260-fa10-4c5a-9cd1-bf98e88ae9fa&#39;, null);return false;" aria-label="Show details for unique-constraint StateName, ">StateName</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="90476103-3b68-492a-82d1-8da675798ec3" onclick="pathTo(this, &#39;90476103-3b68-492a-82d1-8da675798ec3&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="14258b07-9fe6-464d-9d97-0fa21c836608" onclick="pathTo(this, &#39;14258b07-9fe6-464d-9d97-0fa21c836608&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="StockTake, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="StockTake" id="8436faf5-2af7-48d3-889c-c991cf0cda1f" onclick="pathTo(this, &#39;8436faf5-2af7-48d3-889c-c991cf0cda1f&#39;, null);return false;" aria-label="Show details for table StockTake, ">StockTake</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="33052357-ac26-412f-bacf-12163dfaea9a" onclick="pathTo(this, &#39;33052357-ac26-412f-bacf-12163dfaea9a&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="ProductsStockTake" id="d5086a66-e466-49ca-8d3c-81fdb7d56fc4" onclick="pathTo(this, &#39;d5086a66-e466-49ca-8d3c-81fdb7d56fc4&#39;, null);return false;" aria-label="Show details for index ProductsStockTake, ">ProductsStockTake</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="31a39489-c03d-496a-af76-ba803d558e87" onclick="pathTo(this, &#39;31a39489-c03d-496a-af76-ba803d558e87&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/foreign_key.gif" alt="foreign-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="New_ProductsStockTake" id="9668ea36-a579-4023-b330-8f4960a32c3e" onclick="pathTo(this, &#39;9668ea36-a579-4023-b330-8f4960a32c3e&#39;, null);return false;" aria-label="Show details for foreign-key New_ProductsStockTake, ">New_ProductsStockTake</a>
+                            </div>
+                          </li>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="9f09f6f7-b2cb-4995-92ed-762b83f4b769" onclick="pathTo(this, &#39;9f09f6f7-b2cb-4995-92ed-762b83f4b769&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="TaxStatus, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="TaxStatus" id="56b57917-004b-4d15-ad70-9801a390bba5" onclick="pathTo(this, &#39;56b57917-004b-4d15-ad70-9801a390bba5&#39;, null);return false;" aria-label="Show details for table TaxStatus, ">TaxStatus</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="255ce795-b926-4989-a2b5-7f7d4ee0262a" onclick="pathTo(this, &#39;255ce795-b926-4989-a2b5-7f7d4ee0262a&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/unique_constraint.gif" alt="unique-constraint"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="TaxStatus" id="f3ccda3c-6188-4922-874c-4c8936b628fd" onclick="pathTo(this, &#39;f3ccda3c-6188-4922-874c-4c8936b628fd&#39;, null);return false;" aria-label="Show details for unique-constraint TaxStatus, ">TaxStatus</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="17a9af61-c7fa-4ad8-9f1b-36c30959dc02" onclick="pathTo(this, &#39;17a9af61-c7fa-4ad8-9f1b-36c30959dc02&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="68fb65d1-775d-4287-b145-0ab9899669ba" onclick="pathTo(this, &#39;68fb65d1-775d-4287-b145-0ab9899669ba&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Titles, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Titles" id="41b250d6-48f4-48ff-a1bd-d0d552dd7420" onclick="pathTo(this, &#39;41b250d6-48f4-48ff-a1bd-d0d552dd7420&#39;, null);return false;" aria-label="Show details for table Titles, ">Titles</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="aeb24c6f-f29f-41b8-b5d9-3a5f2183a2d0" onclick="pathTo(this, &#39;aeb24c6f-f29f-41b8-b5d9-3a5f2183a2d0&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="c40aec40-6f87-44be-8b6b-95ee4316d45c" onclick="pathTo(this, &#39;c40aec40-6f87-44be-8b6b-95ee4316d45c&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {document.getElementById('02cdb246-adb6-40e1-b94a-a0c1059701ef').click();});</script>
+  </body>
+</html>
