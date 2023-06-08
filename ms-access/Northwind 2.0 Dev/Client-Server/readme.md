@@ -41,6 +41,16 @@ Private Sub Form_AfterDelConfirm(Status As Integer)
               prodIdLng = CLng(prodIdStr)
               AllocateInventory prodIdLng
           Next productIdIndex
+		  
+		  10        Dim prodIdStr As String
+20        Dim productIdIndex As Long
+30        Dim prodIdLng As Long
+40        Dim maxProductIdIndex As Long
+          
+50        maxProductIdIndex = List198.ListCount - 1
+60        For productIdIndex = 0 To maxProductIdIndex
+70            AllocateInventory CLng(List198.Column(0, productIdIndex))
+80        Next productIdIndex
 End Sub
 
 Private Sub Form_Delete(Cancel As Integer)
@@ -87,6 +97,61 @@ Exit_Handler:
 Err_Handler:
 200       clsErrorHandler.HandleError "Form_frmOrderDetails", "Form_Delete"
 210       Resume Exit_Handler
+
+10        On Error GoTo Err_Handler
+          
+11        Dim rmvdProductID, lngProductID As Long
+12        Dim productsToAllocate() As Long
+13        Dim productIdsIndex As Long
+          
+14        productIdsIndex = 1
+          
+20        If MsgBox(GetString(enumStrings.sDeleteRecord, "order"), vbYesNo Or vbQuestion) = vbYes Then
+
+30            lngProductID = 0
+              'Delete of the Order causes a cascading delete of order line items
+              'We want to delete each line item so we can reallocate inventory for each product
+              'before the cascading delete happens
+40            With Me.sfrmOrderLineItems.Form.RecordsetClone
+50                If .RecordCount > 0 Then
+60                    .MoveFirst
+70                    While Not .EOF
+80                        lngProductID = !ProductID
+81                        ReDim Preserve productsToAllocate(1 To productIdsIndex)
+82                        productsToAllocate(productIdsIndex) = lngProductID
+83                        productIdsIndex = productIdsIndex + 1
+110                       .MoveNext
+120                   Wend
+121                   For Each rmvdProductID In productsToAllocate
+122                       List198.AddItem Item:=Str(rmvdProductID)
+123                   Next
+130               End If
+140           End With
+
+150           RemoveFromMRU "Orders", Me.OrderID
+160       Else
+170           Cancel = True
+180       End If
+          
+Exit_Handler:
+190       Exit Sub
+
+Err_Handler:
+200       clsErrorHandler.HandleError "Form_frmOrderDetails", "Form_Delete"
+210       Resume Exit_Handler
+End Sub
+
+Private Sub Form_AfterInsert()
+10        On Error GoTo Err_Handler
+
+20        AddToMRU "Orders", Me.OrderID
+
+Exit_Handler:
+30        Exit Sub
+
+Err_Handler:
+40        clsErrorHandler.HandleError "Form_frmOrderDetails", "Form_AfterInsert"
+50        Resume Exit_Handler
 End Sub
 
 	
