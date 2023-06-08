@@ -27,6 +27,22 @@ Fix dbSeeChanges: Find instances of OpenRecordset and add dbSeeChanges parameter
 	
 	
 Form_frmOrderDetails:
+
+
+Private Sub Form_AfterDelConfirm(Status As Integer)
+          Dim prodIdStr As String
+          Dim productIdIndex As Long
+          Dim prodIdLng As Long
+          Dim maxProductIdIndex As Long
+          
+          maxProductIdIndex = List198.ListCount - 1
+          For productIdIndex = 0 To maxProductIdIndex
+              prodIdStr = List198.Column(0, productIdIndex)
+              prodIdLng = CLng(prodIdStr)
+              AllocateInventory prodIdLng
+          Next productIdIndex
+End Sub
+
 Private Sub Form_Delete(Cancel As Integer)
 10        On Error GoTo Err_Handler
           
@@ -47,7 +63,6 @@ Private Sub Form_Delete(Cancel As Integer)
 60                    .MoveFirst
 70                    While Not .EOF
 80                        lngProductID = !ProductID
-90                        .Delete
                           ReDim Preserve productsToAllocate(1 To productIdsIndex)
                           productsToAllocate(productIdsIndex) = lngProductID
                           productIdsIndex = productIdsIndex + 1
@@ -57,7 +72,7 @@ Private Sub Form_Delete(Cancel As Integer)
 140           End With
 
               For Each rmvdProductID In productsToAllocate
-                  AllocateInventory rmvdProductID
+                  List198.AddItem Item:=Str(rmvdProductID)
               Next
 
 
@@ -72,7 +87,6 @@ Exit_Handler:
 Err_Handler:
 200       clsErrorHandler.HandleError "Form_frmOrderDetails", "Form_Delete"
 210       Resume Exit_Handler
-          
 End Sub
 
 	
