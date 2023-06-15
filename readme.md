@@ -1,6 +1,6 @@
 # The Northwind Strangler (Fig Pattern)
-The purpose off this project is to demonstrate the Strangler Fig pattern on a monolithic Client-Server architecture
-I have chosen a legacy application called Northwind, developed by the Microsoft Access team as a sample application to showcase features
+The purpose off this project is to demonstrate the Strangler Fig pattern on a monolithic Client-Server architecture. I have chosen a legacy application called Northwind, developed by the Microsoft Access team as a sample application to showcase features.
+
 The intention is to apply the strangler pattern to the monolithic application and demonstrate the various patterns involved while also documenting the different phases of implementation, from creating a new client, to removing features and data from the monolith
 
 ## What is Northwind?
