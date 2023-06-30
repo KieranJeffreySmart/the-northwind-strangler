@@ -232,7 +232,35 @@ namespace Northwind20.UI.Tests.Components
             foreach (Process msAccess in msa)
             {
                     msAccess.Kill();
-            }            
+            }
+        }
+
+        internal OrderDetailsForm StartNewOrder()
+        {
+            return new OrderDetailsForm();
+        }
+    }
+
+    public class OrderDetailsForm
+    {
+        internal void AddItem(string productCategory, string product, int quantity)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void CreateInvoice()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetCustomer(string customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetShippingDate(int shippingFee)
+        {
+            throw new NotImplementedException();
         }
     }
 }
