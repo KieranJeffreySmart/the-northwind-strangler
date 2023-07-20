@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33020.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind20.UI.Tests", "Northwind20.UI.Tests\Northwind20.UI.Tests.csproj", "{F67BB2CE-8F5D-428D-A952-A24E5D2DCBC6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{A4746617-2B27-47FA-9587-D279E164EB70}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F67BB2CE-8F5D-428D-A952-A24E5D2DCBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F67BB2CE-8F5D-428D-A952-A24E5D2DCBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F67BB2CE-8F5D-428D-A952-A24E5D2DCBC6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4746617-2B27-47FA-9587-D279E164EB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4746617-2B27-47FA-9587-D279E164EB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4746617-2B27-47FA-9587-D279E164EB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4746617-2B27-47FA-9587-D279E164EB70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

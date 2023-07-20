@@ -57,7 +57,7 @@ namespace Northwind20.UI.Tests
                 app.DatabaseLogin("NorthwindClient", "N0rthw1nd2");
                 Thread.Sleep(500);
                 Assert.True(app.LoginFormIsOpen);
-
+                
                 app.UserLogin("Andrew Cencini");
                 Thread.Sleep(500);
                 Assert.False(app.LoginFormIsOpen);

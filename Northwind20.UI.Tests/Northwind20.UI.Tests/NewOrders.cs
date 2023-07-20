@@ -29,9 +29,11 @@ namespace Northwind20.UI.Tests
                 var orderDetailForm = app.StartNewOrder();
                 Assert.NotNull(orderDetailForm);
                 orderDetailForm.SetCustomer(customer);
-                orderDetailForm.SetShippingDate(shippingFee);
+                orderDetailForm.SetShippingFee(shippingFee);
                 orderDetailForm.AddItem(productCategory, product, quantity);
                 orderDetailForm.CreateInvoice();
+                Thread.Sleep(10000);
+                Assert.True(app.InvoiceReportIsOpen);
             }
             finally
             {
